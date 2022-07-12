@@ -3,10 +3,12 @@ window.onload = function IniciaJogo() {
     var element = document.getElementsByClassName('resultado')
     var chute = window.prompt(" digite seu chute");
 
-    if (chute == numeropensado)
+    if (chute == numeropensado) {
         document.write ("voce acertou!<br>");
+
+     }
     else {
-    element.innerHTML =`voce errou, o numero pensado foi ${numeropensado} <br>`;
-        IniciaJogo();
+        document.write(`voce errou, o numero pensado foi ${numeropensado} <br>`);
     }
+    IniciaJogo();
 }
